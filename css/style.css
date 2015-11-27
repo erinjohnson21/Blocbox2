@@ -264,6 +264,7 @@ header .hero img {
 .testimonials ul li {
   list-style-type: none;
 }
+
 .testimonials blockquote {
   color: #FFFFFF;
   text-align: left;
@@ -302,3 +303,8 @@ header .hero img {
   font-size: 13px;
   margin-top: 30px;
 }
+.testimonials ul li.stagger {
+  margin-top: 20px;
+}
+
+
