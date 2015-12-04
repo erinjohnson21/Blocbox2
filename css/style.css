@@ -415,6 +415,15 @@ footer .logo {
   font-weight: 100;
   line-height: 33px;
 }
+
+.left-nav ul li a.active {
+    background-color: #FFFFFF;
+    color: #333333;
+}
+.left-nav li a:hover:not(.active) {
+    background-color: #333333;
+    color: white;
+}
 .left-nav .items ul li a i {
   width: 16px;
   text-align: center;
