@@ -41,7 +41,7 @@ p {
   float: left;
   position: relative;
   min-height: 1px;
-  margin: 0 2% 10px; /*changed to fix footer*/
+  margin: 0 2% 20px;
 }
 
 @media (min-width: 768px) {
@@ -347,8 +347,11 @@ footer nav ul li a {
   color: #FFFFFF;
   text-decoration: none;
 }
+footer .right-footer-block {
+  background-color: transparent;
+}
 footer .logo {
-  padding: 2em 0;
+  padding: 2.35em 0;
   margin: 0 auto;
   display: block;
 }
@@ -361,12 +364,14 @@ footer .logo {
      height: 80px;
    }
    footer p, footer nav ul{
-     padding: 2em 0 2em;
+     padding: 2em 0;
      text-align: left;
+   }
+   footer .right-footer-block {
+     background-color: #3498DB;
    }
    footer .logo{
      padding: 2em 0 2em 1.5em;
-     text-align: center;
    }
  }
 
@@ -443,7 +448,7 @@ footer .logo {
    }
  }
   .left-nav .site-logo {
-    padding: 6px 0;
+    padding: 20px 0;
     background: #34495E;
     display: block;
     text-align: center;
