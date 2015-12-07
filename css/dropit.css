@@ -60,6 +60,12 @@
     font-family: "Lato", Helvetica, Arial, sans-serif;
     font-weight: 100;
 }
+.dropit .dropit-open .dropit-submenu a:hover {
+    background-color: #333333;
+    color: #FFFFFF;
+    padding: 5px 10px 5px 10px;
+}
+    
 /*DROPDOWN FOR SETTINGS*/
 .dropit-inverse.dropit .dropit-submenu {
   position: absolute;
@@ -67,7 +73,7 @@
   right: 0; /* dropdown left or right */
   z-index: 1000;
   display: none;
-  min-width: 125px;
+  min-width: 145;
   list-style: none;
   padding: 20px;
   margin: 20px 0 0;

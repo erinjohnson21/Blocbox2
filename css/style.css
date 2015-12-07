@@ -448,7 +448,7 @@ footer .logo {
  @media (min-width:992px) {
    .left-nav {
      height: 100vh;
-     width:14.66666667%;
+     width:16%;
      color:#FFFFFF;
      background: #34495E;
      background-image: linear-gradient(206deg, #5F81A3 0%, #34495E 94%);
@@ -499,12 +499,12 @@ footer .logo {
 
 }
 
-.left-nav ul li a.active {
+.left-nav .items ul li a.active {
     background-color: #FFFFFF;
     color: #333333;
     padding: 5px 10px 5px 10px;
 }
-.left-nav li a:hover:not(.active) {
+.left-nav .items li a:hover:not(.active) {
     background-color: #333333;
     color: white;
     padding: 5px 10px 5px 10px;
