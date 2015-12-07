@@ -5,7 +5,7 @@
   <meta name="viewport" content="Width=device-width, initial=scale=1">
   <meta charset="UTF-8">
   <title>Save, Share and collaborate | Blocbox</title>
-  
+
   <!--GoogleFonts-->
   <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,300italic,400italic,700italic|Varela+Round' rel='stylesheet' type='text/css'>
 
@@ -14,19 +14,18 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/font-awesome.css">
   <link rel="stylesheet" href="css/animate.css">
-  
+
 </head>
 <body>
 <header>
   <nav class="container">
-    <div class="one-half">
+    <!--I removed the one-half classes from the individual parts of the nav. Your media query for min width: 992px had this class making the width of each div with this class 96%, thus they couldn't both be 96% and be in a line. That's why one was bumping down to the next line. -->
+    <div>
       <a href="index.html" class="site-logo"><img src="images/site-logo.png" alt="Blocbox"/></a>
-    </div>
-    <div class="one-half">
       <ul>
         <li><a href="signin.html">Sign In</a></li>
         <li class="btn-outline"><a href="signup.html">Sign Up</a></li>
-      </ul> 
+      </ul>
     </div>
   </nav>
   <div class="container hero">
@@ -66,7 +65,7 @@
         <p>We have many options to fit your needs. It's free to try for 30 days*, and you can always change your plan once you signed up. <br/>Here are the different features of each plan:</p>
        </div>
        <ul class="container">
-        <li class="one-third"> 
+        <li class="one-third">
           <div class="box">
             <h3>Casual</h3>
             <h4>Free</h4>
@@ -78,7 +77,7 @@
             <a href="signup.html" class="btn">Start Your Free Trial!</a>
           </div>
        </li>
-       <li class="one-third"> 
+       <li class="one-third">
           <div class="box middle">
             <h3>Professional</h3>
             <h4><span>$</span>5<span class="month">/month</span></h4>
@@ -91,7 +90,7 @@
             <a href="signup.html" class="btn">Start Your Free Trial!</a>
           </div>
        </li>
-       <li class="one-third"> 
+       <li class="one-third">
           <div class="box">
             <h3>Expert</h3>
             <h4><span>$</span>10<span class="month">/month</span></h4>
@@ -148,22 +147,22 @@
   <!--Footer-->
   <footer>
     <div class="container footer-nav-block">
-        <div class="left-footer-block one-third">
-          <p class="copyright-block">&copy; 2015. <strong>Blocbox</strong> - All Rights Reserved.</p>
-        </div>
-        <nav class="link-block middle-footer-block one-third">
+      <div class="left-footer-block three-fourths">
+        <nav class="link-block middle-footer-block">
           <ul>
             <li><a href="">Terms</a></li>   /
             <li><a href="">Privacy Policy</a></li>   /
             <li><a href="">Contact Us</a></li>   /
             <li><a href="">About Us</a></li>   /
-            <li><a href="">Twitter</a></li> 
+            <li><a href="">Twitter</a></li>
           </ul>
+          <p class="copyright-block">&copy; 2015. <strong>Blocbox</strong> - All Rights Reserved.</p>
         </nav>
-        <div class="right-footer-block one-third"> 
-          <img class="logo" src="images/site-logo.png" alt="Blocbox">
-        </div>
       </div>
-  </footer>   
+      <div class="right-footer-block one-fourth">
+        <img class="logo" src="images/site-logo.png" alt="Blocbox">
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
