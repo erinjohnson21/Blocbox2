@@ -92,6 +92,9 @@ header {
   z-index: 3;
   }
 }
+header img {
+  padding-top: 10px;
+}
 header nav {
   padding:1em 0;
 }
