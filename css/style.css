@@ -2,11 +2,11 @@ html, body {
   overflow-x:hidden;
 }
 body {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-family: "Catamaran", Helvetica, Arial, sans-serif;
   color:#333333;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Varela Round", Helvetica, Arial, sans-serif;
+  font-family: "Merriweather", Times, serif;
 }
 
 h2 {
@@ -48,6 +48,9 @@ p {
   .container {
     width: 750px;
   }
+  .benefits li img {
+    text-align: center;
+  }
 }
 
 @media (min-width: 992px) {
@@ -81,19 +84,11 @@ p {
 /*HEADER*/
 header {
   color:#FFFFFF;
-  background: #34495E;
-  .Left_Navigation {
-  background-image: -webkit-linear-gradient( 30deg, rgb(52,73,94) 0%, rgb(95,129,163) 100%);
-  position: absolute;
-  left: -3px;
-  top: 0px;
-  width: 1443px;
-  height: 800px;
-  z-index: 3;
-  }
+  background: #2b6b66;
 }
 header img {
-  padding-top: 10px;
+  padding-top: 12px;
+  float: left;
 }
 header nav {
   padding:1em 0;
@@ -124,28 +119,28 @@ header nav ul > li > a {
 header nav ul > li.btn-outline:hover > a {
   color: #34495E;
 }
+header .heroimage {
+  background-image: url('../images/heroimage.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  text-shadow: 3px 0px 50px rgba(0, 0, 0, 0.50);
+}
 header .hero {
   text-align: center;
-  display: block;
-  position: relative;
+  margin-top: 120px;
 }
 header .hero h1 {
-  font-size: 48px;
-  font-weight: normal;
-  margin:95px 0 0;
+  font-size: 37px;
+  font-weight: bold;
 }
 header .hero p {
   font-size: 22px;
   line-height: 26px;
   font-weight: 100;
-  margin:10px 0 40px;
+  padding-bottom: 20px;
 }
-header .hero img {
-  display: block;
-  margin: 3em auto 0;
-  max-width: 100%;
-  height: auto;
-}
+
 /*BUTTONS*/
 .btn {
   border-radius: 4px;
@@ -153,33 +148,45 @@ header .hero img {
   font-weight: 700;
   text-decoration: none;
   padding:10px 30px;
-  background: #2ECC71;
-  border: 2px solid #2ECC71;
-  box-shadow: 0px 2px 0px 0px #22894E;
+  background: #ee3700;
+  border: 2px solid #ee3700;
+  box-shadow: 0px 2px 0px 0px #ff6000;
+  margin-left: auto;
 }
 
 /*BENEFITS*/
-.benefits {
+.benefits .whitebox, .bluebox {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  max-width:55%;
   text-align: center;
-  display: block;
-  position: relative;
 }
-.benefits ul {
-  margin: 0 auto;
-  padding: 4em 0;
+.benefits .image img {
+  float: right;
+  padding-bottom: 10px;
 }
-.benefits ul li {
+.benefits .notes img, .links img {
+  float: left;
+  padding-bottom: 10px;
+}
+.benefits .image {
+  background-color: #072c47;
+}
+.benefits .bluebox h2, .bluebox p {
+  color: #ffffff;
+}
+.benefits li h2 {
+  font-weight: bold;
+  color: #072c47;
+  margin-top: 40px;
+}
+.benefits li {
   list-style-type: none;
-  display: inline-block;
+  text-align: center;
 }
-.benefits i {
-  color: #3498DB;
-  font-size: 60px;
-  margin: 0;
-  vertical-align: middle;
-}
-.benefits h2 {
-  color: #3498DB;
+.benefits .whitebox p, .bluebox p {
+  font-weight: lighter;
+  line-height: 25px;
 }
 
 /*PRICING*/
@@ -189,6 +196,13 @@ header .hero img {
   background-size: cover;
   text-align: center;
   padding: 4em 0;
+}
+.pricing h2 {
+  font-weight: bold;
+}
+.pricing p {
+  font-weight: lighter;
+  line-height: 20px;
 }
 .pricing h2, .pricing p {
   color:#FFFFFF;
@@ -203,7 +217,7 @@ header .hero img {
 
 .box {
   padding: 0 15px 15px;
-  background: #FFFFFF;
+  background: #d9eae8;
   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
   min-height: 439px;
   position: relative;
@@ -214,10 +228,11 @@ header .hero img {
   margin-top: 0px;
 }
 .box h3 {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
-  font-weight: 600;
+  font-size: 20px;
+  font-family: "Merriweater", Times, serif;
+  font-weight: bold;
   text-transform: uppercase;
-  background: E2E2E2;
+  background: #ffffff;
   box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.40);
   left:0;
   right:0;
@@ -228,16 +243,16 @@ header .hero img {
 }
 .box h4 {
   font-size: 50px;
-  font-weight: normal;
+  font-weight: bold;
   margin: 40px 0 10px;
-  color:#3498DB;
+  color:#333333;
 }
 .box h4 span {
   font-size: 32px;
   vertical-align: top;
 }
 .box h4 span.month {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-family: "", Helvetica, Arial, sans-serif;
   font-weight: 100;
   color: #888888;
   font-size: 20px;
@@ -267,7 +282,12 @@ header .hero img {
   text-align: center;
 }
 .testimonials h2 {
-  color: #3498DB;
+  color: #072c47;
+  font-weight: bold;
+}
+.testimonials p {
+  font-weight: lighter;
+  line-height: 20px;
 }
 .testimonials ul li {
   list-style-type: none;
@@ -277,7 +297,7 @@ header .hero img {
   color: #FFFFFF;
   text-align: left;
   font-style: italic;
-  background: #34495E;
+  background: #072c47;
   position: relative;
   padding:30px;
   width: auto;
@@ -292,7 +312,7 @@ header .hero img {
   width: 0px;
   position: absolute;
   pointer-events:none;
-  border-top-color:#34495E;
+  border-top-color:#072c47;
   border-width: 10px;
   margin-left: -10px;
 }
@@ -321,7 +341,7 @@ header .hero img {
   padding-bottom: 40px;
 }
 .sign-up h1 {
-  color: #3498DB;
+  color: #072c47;
 }
 .sign-up p {
   font-size: 20px;
@@ -330,15 +350,13 @@ header .hero img {
 
 /*FOOTER*/
 footer {
-  background-color: #34495E;
-  background-image: linear-gradient(to top,
-    #3498DB 0%, #3498DB 50%, #34495E 50%, #34495E 100%);
+  background-color: #2b6b66;
   color: #FFFFFF;
   position: relative;
   overflow: hidden;
   z-index: 0;
   font-size: 14px;
-  font-weight: 400; /* You aren't calling font-weight: 100 in your header so you can't use it here. */
+  font-weight: 400;
   text-align: center;
 }
 
@@ -358,6 +376,7 @@ footer li {
   display: inline;
   margin-right: 3px;
   margin-left: 3px;
+  padding-right: 10px;
 }
 footer a {
   color: #FFFFFF;
@@ -365,9 +384,6 @@ footer a {
 }
 footer a:hover {
   font-weight: 700;
-}
-.right-footer-block {
-  background-color: #3498DB;
 }
 footer .logo {
   padding: 2.35em 0;
@@ -377,9 +393,7 @@ footer .logo {
 
 @media (min-width: 992px){
    footer{
-     background-color: #3498DB;
-     background-image: linear-gradient(to left,
-        #3498DB 0%, #3498DB 25%, #34495E 25%, #34495E 100%);
+     background-color: #2b6b66;
    }
    footer p, footer ul{
      display: inline-block;
@@ -390,9 +404,6 @@ footer .logo {
    }
    footer ul {
      float: right;
-   }
-   .right-footer-block {
-     /*background-color: #3498DB;*/
    }
    footer .logo{
      padding: 2em 0 33px 1.5em;
@@ -408,11 +419,9 @@ footer .logo {
  }
  .left-nav {
    height: 100%;
-   width: 280px;
+   width: 290px;
    color: #FFFFFF;
-   background: #34495E;
-   background-image: linear-gradient(206deg, #5481A3 0%, #34495E 94%);
-   float: left;
+   background: #2c6a67;
    position: absolute;
    -webkit-transition: all 0.3s ease-in-out;
    -moz-transition: all 0.3s ease-in-out;
@@ -425,7 +434,7 @@ footer .logo {
  }
  .left-nav.open {
    display:block;
-   width:280px;
+   width:290px;
    -webkit-transition: all 0.3s ease-in-out;
    -moz-transition: all 0.3s ease-in-out;
    -o-transition: all 0.3s ease-in-out;
@@ -437,24 +446,24 @@ footer .logo {
      z-index: 100;
    }
    .hamburger {
-   position:absolute;
-   z-index: 1000;
-   background:#34495E;
-   color:#FFF;
-   text-decoration: none;
-   font-size: 22px;
-   padding: 10px 15px;
-   border-radius: 4px;
-   left: 5px;
-   top: 10px;
+     font-family: Helvetica, sans-serif;
+     position:absolute;
+     z-index: 1000;
+     background:#2c6a67;
+     color:#FFF;
+     text-decoration: none;
+     font-size: 22px;
+     padding: 10px 15px;
+     border-radius: 4px;
+     left: 5px;
+     top: 10px;
  }
  @media (min-width:992px) {
    .left-nav {
      height: 100vh;
      width:16%;
      color:#FFFFFF;
-     background: #34495E;
-     background-image: linear-gradient(206deg, #5F81A3 0%, #34495E 94%);
+     background: #2c6a67;
      float:left;
      position: fixed;
      display:block;
@@ -476,7 +485,7 @@ footer .logo {
  }
   .left-nav .site-logo {
     padding: 20px 0;
-    background: #34495E;
+    background: #2c6a67;
     display: block;
     text-align: center;
   }
@@ -498,18 +507,17 @@ footer .logo {
   color: #FFFFFF;
   text-decoration: none;
   font-weight: 100;
-  line-height: 33px;
+  line-height: 38px;
+  padding: 5px 10px 5px 10px;
 
 }
-
 .left-nav .items ul li a.active {
     background-color: #FFFFFF;
-    color: #333333;
-    padding: 5px 10px 5px 10px;
+    color: #e2e2e2;
 }
 .left-nav .items li a:hover:not(.active) {
-    background-color: #333333;
-    color: white;
+    background-color: #e2e2e2;
+    color: #333333;
     padding: 5px 10px 5px 10px;
 }
 .left-nav .items ul li a i {
@@ -521,7 +529,7 @@ footer .logo {
 /*LEFT NAVBAR SETTINGS*/
 .left-nav .settings {
   position: absolute;
-  background: #22303E;
+  background: #2c6a67;
   width: 100%;
   bottom: 0;
   left: 0;
@@ -562,11 +570,11 @@ footer .logo {
   margin: 0 1% 20px;
 }
 .content .header h1 {
-font-family: "Lato", Helvetica, Arial, sans-serif;
+font-family: "Catamaran", Helvetica, Arial, sans-serif;
 font-weight: 100;
 margin: 0 0 30px;
 font-size: 36px;
-color: #3498DB;
+color: #333333;
 line-height: 44px;
 float: left;
 display: inline-block;
@@ -588,6 +596,9 @@ display: inline-block;
   position: relative;
   overflow: hidden;
   padding: 20px;
+}
+.item-box:hover{
+    background-color: #b6dcd3;
 }
 /* Larger Mobile Devices */
  @media (min-width:460px) {
@@ -645,14 +656,14 @@ display: inline-block;
   right:0;
 }
 .item-box h2 {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-family: "Merriweather", Times, serif;
   font-weight: 700;
   font-size: 15px;
   line-height: 17px;
   margin:0;
 }
 .item-box h2 a {
-  color: #3498DB;
+  color: #e55124;
   text-decoration: none;
 }
 .item-box h2 img {
