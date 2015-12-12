@@ -344,6 +344,7 @@ header .hero p {
   color: #072c47;
 }
 .sign-up p {
+  font-family: "Catamaran", Helvetica, Arial, sans-serif;
   font-size: 20px;
   margin-bottom: 30px;
 }
